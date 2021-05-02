@@ -41,7 +41,7 @@ export default function Auth(){
     return(<>
     <Router>
             <Switch>
-                <Route exact path="/">
+                <Route exact path="/ContactBook_React">
                     <Login/>
                 </Route>
                 <Route path="/signup">
