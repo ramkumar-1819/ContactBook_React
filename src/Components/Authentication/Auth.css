@@ -1,0 +1,35 @@
+.n{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width:50%;
+    height:70vh;
+    background-color: rgb(255, 253, 254);
+    border-radius: 20px;
+    border:1px dotted red;
+    position: fixed;
+    top:15vh;
+    left:25%;
+  }
+  .logo{
+    background-image: url(../contact-book-2415199-2031455.png);
+    background-size: 180px;
+    background-position: center;
+    background-color: #878d99;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+  .auth{
+    width:60%;
+    height:50vh;
+  }
+  .auth>div:first-child{
+    text-shadow: 1px 1px gray;
+    color: red;
+    font-weight: bold;
+    height: auto;
+    text-align: center;
+  }
+  
+  

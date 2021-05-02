@@ -1,23 +1,19 @@
-import logo from './logo.svg';
+import Auth from "./Components/Authentication/Authentication";
 import './App.css';
+import React, { useEffect } from 'react';
+import {useDispatch} from 'react-redux';
+import axios from "axios";
+import {dataFetching} from './Components/Actions';
 
 function App() {
+  const dispatch=useDispatch();
+
+  useEffect(()=>{
+    dispatch(dataFetching())
+},[])
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+         <Auth/>
     </div>
   );
 }
