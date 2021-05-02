@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/ContactBook_React/static/css/main.8ec6ada0.chunk.css",
+    "main.js": "/ContactBook_React/static/js/main.0052e7ee.chunk.js",
+    "main.js.map": "/ContactBook_React/static/js/main.0052e7ee.chunk.js.map",
+    "runtime-main.js": "/ContactBook_React/static/js/runtime-main.c6bd3daf.js",
+    "runtime-main.js.map": "/ContactBook_React/static/js/runtime-main.c6bd3daf.js.map",
+    "static/js/2.40144189.chunk.js": "/ContactBook_React/static/js/2.40144189.chunk.js",
+    "static/js/2.40144189.chunk.js.map": "/ContactBook_React/static/js/2.40144189.chunk.js.map",
+    "static/js/3.fa741722.chunk.js": "/ContactBook_React/static/js/3.fa741722.chunk.js",
+    "static/js/3.fa741722.chunk.js.map": "/ContactBook_React/static/js/3.fa741722.chunk.js.map",
+    "index.html": "/ContactBook_React/index.html",
+    "static/css/main.8ec6ada0.chunk.css.map": "/ContactBook_React/static/css/main.8ec6ada0.chunk.css.map",
+    "static/js/2.40144189.chunk.js.LICENSE.txt": "/ContactBook_React/static/js/2.40144189.chunk.js.LICENSE.txt",
+    "static/media/Auth.css": "/ContactBook_React/static/media/contact-book-2415199-2031455.9a135919.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c6bd3daf.js",
+    "static/js/2.40144189.chunk.js",
+    "static/css/main.8ec6ada0.chunk.css",
+    "static/js/main.0052e7ee.chunk.js"
+  ]
+}
