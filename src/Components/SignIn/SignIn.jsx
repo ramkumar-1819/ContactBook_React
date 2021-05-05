@@ -57,8 +57,8 @@ export default function SignIn(){
     <div className="login">
     <div className="login-name">LOGIN</div>
             <form className="form" onSubmit={(e)=>submitLoginHandler(e)}>
-                <input id="usrname"type="text" placeholder="Enter UserName"></input>
-                <input id="pass" type="password" placeholder="Enter Password"></input>
+                <input id="usrname"type="text" placeholder="Enter UserName" autoComplete="off"></input>
+                <input id="pass" type="password" placeholder="Enter Password" autoComplete="off"></input>
                 <button type="submit" className="login-button">Login</button>
                 <div>Not a Member?<Link to="/signup">SignUp</Link></div>
             </form>

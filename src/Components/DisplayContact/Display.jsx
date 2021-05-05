@@ -89,6 +89,7 @@ export default function Display(){
              for(var tick of removeCheckboxTick){
                  tick.checked=false        
              }
+            document.getElementsByClassName("popupSection")[0].style.display="none";
             document.getElementById("searchedValue").value="";
             document.getElementsByClassName("delete")[0].style.display="none";
             dispatch({type:"Option",option:""})

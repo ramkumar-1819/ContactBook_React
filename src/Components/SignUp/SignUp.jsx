@@ -62,9 +62,9 @@ export default function SignUp(){
     <div className="Signup">
          <div className="Signup-name">SIGN-UP</div>
             <form className="forms" onSubmit={(e)=>submitHandler(e)}>
-                <input id="newusr" type="text" placeholder="Create UserName"></input>
-                <input id="newpass" type="password" placeholder="Create Password"></input>
-                <input id="repass" type="password" placeholder="ReType-Password"></input>
+                <input id="newusr" type="text" placeholder="Create UserName" autoComplete="off"></input>
+                <input id="newpass" type="password" placeholder="Create Password" autoComplete="off"></input>
+                <input id="repass" type="password" placeholder="ReType-Password" autoComplete="off"></input>
                 <button type="submit" className="signup-button">SignUp</button>    
                 <div>Already a member?<Link to="/signin">Login</Link></div>
             </form>
