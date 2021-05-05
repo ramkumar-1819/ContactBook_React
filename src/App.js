@@ -7,7 +7,7 @@ import {dataFetching} from './Components/Actions';
 
 function App() {
   const dispatch=useDispatch();
-
+   
   useEffect(()=>{
     dispatch(dataFetching())
 },[])

@@ -1,4 +1,20 @@
 
+@keyframes rotate0 {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+@keyframes rotate1 {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(-360deg);}
+}
+.form>input:first-child{
+    animation-name: rotate0;
+    animation-duration: 2s;  
+}
+.form>input:nth-child(2){
+    animation-name: rotate1;
+    animation-duration: 2s;  
+}
 .form>input{
     font-family: cursive;
     padding-left: 5px;

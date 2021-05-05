@@ -1,0 +1,53 @@
+.contact{
+    background-color: gray;
+    position: absolute;
+    z-index: 1;
+    top:100px;
+    left:400px;
+    border-radius: 20px;
+    border:2px dotted black;
+    width: 400px;
+    height: 300px;
+    justify-content: space-evenly;
+    align-items: center;
+    display: none;
+    flex-direction: column;
+}
+.contact>b{
+    font-size: larger;
+}
+.contact>button{
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    background-color: green;
+    outline: none;
+    border: 1px solid black;
+    width:100px;
+    height: 25px;
+}
+.contact>button:hover{
+    box-shadow: 2px 2px 2px black;
+}
+.contact>input{
+    font-family: cursive;
+    width: 300px;
+    height: 25px;
+    outline: none;
+}
+.contact>input:focus{
+    border: 1px solid red;
+}
+#close{
+    cursor: pointer;
+    outline: none;
+    width: 20px;
+    font-weight: bolder;
+    color: red;
+    position: absolute;
+    right: 2%;
+    top:2%;
+}
+#close:hover{
+    box-shadow: 2px 2px 2px black;
+}

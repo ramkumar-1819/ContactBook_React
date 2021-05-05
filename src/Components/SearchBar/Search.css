@@ -1,0 +1,48 @@
+#searchbar{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#searchbar>input{
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    color: gray;
+    width:70%;
+    height: 50px;
+}
+#searchbar>input::placeholder{
+    color: gray;
+}
+#searchbar>button:hover{
+    height:30px;
+    box-shadow: 2px 2px 2px gray;
+}
+#searchbar>button{
+    outline: none;
+    border: 1px dotted black;
+    width: 100px;
+    height: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(241, 8, 210);
+}
+.popupSection{
+    position: fixed;
+    top:300px;
+    left: 450px;
+    width: 400px;
+    height: 100px;
+    border: 2px solid black;
+    display: none;
+    z-index: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+    border-radius: 10px;
+    font-weight: bold;
+}

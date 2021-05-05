@@ -3,8 +3,7 @@ import './SignUp.css'
 import axios from 'axios';
 import {useSelector} from 'react-redux';
 import {useDispatch} from 'react-redux';
-import {getDatas} from '../Actions';
-import {dataFetching} from '../Actions';
+import {dataFetching} from '../Actions';   //store the user and his datas in the API 
 
 export default function SignUp(){
     const dispatch=useDispatch();
@@ -29,8 +28,6 @@ export default function SignUp(){
             return false
         }
         if(document.getElementById("newpass").value!==document.getElementById("repass").value){
-            console.log(document.getElementById("newpass").value)
-            console.log(document.getElementById("repass").value)
             alert("Password is Not matching")
             document.getElementById("repass").focus()
             return false
@@ -52,7 +49,7 @@ export default function SignUp(){
                 "datas":[]
             })
             .then(res=>{
-                dispatch(dataFetching())
+                dispatch(dataFetching())  //calling this action to store the user and his datas in the store as a new member
                 document.getElementsByClassName("blur")[0].style.display="block";
                 document.getElementsByClassName("popup")[0].style.display="flex";
             })
