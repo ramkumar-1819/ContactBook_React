@@ -56,16 +56,20 @@ export default function Search(){
         //display the matched datas that we have in the array   
         //Deselecting the checkboxes if we are going to search for a contact
         CancelFilter()
-        if(newData.length===0){
-            document.getElementsByClassName("popupSection")[0].style.display="flex";      
+        if(document.getElementById("searchedValue").value===""){
+            alert("Please Enter Some Value to Search")
         }
         else{
-            document.getElementsByClassName("popupSection")[0].style.display="none";
+            if(newData.length===0){
+                document.getElementsByClassName("popupSection")[0].style.display="flex";      
+            }
+            else{
+                document.getElementsByClassName("popupSection")[0].style.display="none";
+            }
+            dispatch({type:"Contact",values:newData})
+            dispatch({type:"Option",option:""})
         }
-        dispatch({type:"Contact",values:newData})
-        dispatch({type:"Option",option:""})
     }
-
 
 
     return(
