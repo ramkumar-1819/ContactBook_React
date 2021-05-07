@@ -9,21 +9,22 @@ export default function Search(){
     //initialData -- contain Initial ContactDatas got from API based on User Id
     //newData -- This array hold datas based on search
 
-    const initialData=useSelector(state=>state.initialData);        
+    const initialData=useSelector(state=>state.initialData);    
     const dispatch=useDispatch();
     let newData=[];                                                 
 
     const changeHandler=(e)=>{  
+        console.log(initialData)    
         //This Function executes once the Input Search field is Changed                                   
         //If the I/P is empty then display all the datas
         //else display datas based on the search
         //If sorting option or checkbox is applied then remove everything.
-        if(e.target.value===""){                                   
-           newData=initialData;
+        if(e.target.value===""){  
+           CancelFilter();                                 
+           [...newData]=initialData;
            dispatch({type:"Option",option:""})
-           dispatch({type:"Contact",values:initialData})
+           dispatch({type:"Contact",values:newData})
            //Removing Sort if Applied
-           CancelFilter();
         document.getElementsByClassName("popupSection")[0].style.display="none";
         document.getElementsByClassName("delete")[0].style.display="none";
         }
