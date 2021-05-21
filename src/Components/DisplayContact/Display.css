@@ -22,13 +22,13 @@
 }
 .filter-delete>button:first-child{
     margin-left: 80px;
-    background-color: green;
+    background-color: gray;
 }
 .filter-delete>button:last-child{
     display: none;
     margin-left: 30px;
     border: 1px dotted black;
-    background-color: red;
+    background-color: gray;
 }
 .mainPage{
     font-family: cursive;
@@ -42,7 +42,7 @@
     width: 100%;
 }
 .mainPage thead{
-    background-color:lightslategray;
+    background-color:#f50057;
 }
 .mainPage th,td{
     height: 40px;

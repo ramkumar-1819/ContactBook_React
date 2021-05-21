@@ -13,7 +13,7 @@ import {
 
 function Login(){  
     return(
-            <div className="n">
+            <div className="authPage">
                     <div className="logo"></div>
                     <div className="auth">
                     <div>WELCOME TO CONTACT BOOK</div>

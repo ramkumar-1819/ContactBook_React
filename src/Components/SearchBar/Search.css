@@ -28,7 +28,7 @@
     font-weight: bold;
     cursor: pointer;
     color: white;
-    background-color: rgb(241, 8, 210);
+    background-color:gray;
 }
 .popupSection{
     position: fixed;
