@@ -26,7 +26,7 @@ function Login(){
 //If route is Signup then we need to render this Signupp Component
 function SignUpp(){   
     return(
-        <div className="n">
+        <div className="authPage">
                 <div className="logo"></div>
                 <div className="auth">
                 <div>WELCOME TO CONTACT BOOK</div>
